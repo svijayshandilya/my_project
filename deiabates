@@ -1,0 +1,26 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+df = pd.read_csv ("c:\data\diabeteas.csv")
+
+a=df['Pregnancies']
+b=df['Glucose']
+c=df['BloodPressure']
+d=df['SkinThickness']
+e=df['Insulin']
+f=df['BMI']
+g=df['DiabetesPedigreeFunction']
+h=df['Age']
+i=df['Outcome']
+p=df['patientname']
+
+df. corr()
+
+AGE = {'pregnancy-diabetic':'yellow', 'bloodpressure-diabetic':'red','outcome':'green'}
+
+plt.scatter (a,b,h,c=p.apply(lambda x:colors[p]))
+
+plt.alable('Pregnancy')
+plt.blable('BMI')
+plt.show()
